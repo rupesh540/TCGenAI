@@ -2,10 +2,6 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
-import os
-
-os.environ['OPENAI_API_KEY'] = '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'
-
 llm = OpenAI(temperature = 0.6)
 
 def generate_Test_Cases(domain, functionality, number, type):
